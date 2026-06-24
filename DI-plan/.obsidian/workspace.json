@@ -6,6 +6,7 @@
       {
         "id": "678fa61a67e2a5ab",
         "type": "tabs",
+        "dimension": 35.01118568232662,
         "children": [
           {
             "id": "d1242c39eaa2f751",
@@ -55,6 +56,7 @@
       {
         "id": "ea11b9d887589a82",
         "type": "tabs",
+        "dimension": 64.98881431767337,
         "children": [
           {
             "id": "6e53fdd0ee7660c8",
@@ -99,6 +101,20 @@
             }
           },
           {
+            "id": "7ebf4800bed7ba1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Timetable.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Timetable"
+            }
+          },
+          {
             "id": "d3b527f75c503d60",
             "type": "leaf",
             "state": {
@@ -109,7 +125,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -271,10 +287,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "8c831b0c7943b377",
+  "active": "7ebf4800bed7ba1f",
   "lastOpenFiles": [
-    "softrain.md",
+    "Meeting 3.md",
     "Meeting 2.md",
+    "softrain.md",
     "Topic.md",
     "Timetable.md",
     "Main plan.md"
