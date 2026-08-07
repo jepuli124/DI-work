@@ -10,12 +10,15 @@ How I have executed
 | 16.06.2026 | Officially started work                            | Formed a structure for the paper. Formed a plan how to make this. Started to create related research part. |
 | 15.07.2026 | Continued work after 3 week focus on other courses | Casually a month behind schedule                                                                           |
 | 16.07.2026 | Continued                                          | Improved a plan. Wrote more to the related research but also to the machine vision chapter.                |
+| 04.08.2026 | Related research                                   | Finished related research                                                                                  |
+| 05.08.2026 | [[Meeting 4]]                                      | Telling Jussi Kasurinen what I have done during summer.                                                    |
+| 07.08.2026 | Methodology                                        | It has been written. 3 weeks behind schedule                                                               |
 
 Incoming events:
 
-| Date       | Name          | Desc.                                                   |
-| ---------- | ------------- | ------------------------------------------------------- |
-| 05.08.2026 | [[Meeting 4]] | Telling Jussi Kasurinen what I have done during summer. |
+| Date | Name | Desc. |
+| ---- | ---- | ----- |
+|      |      |       |
 
   How I planned to execute
 

@@ -3,8 +3,8 @@ Nice and steady
 
 
 - [ ] check similar DI works from LutPub 
-- [ ] Write a Related research
-- [ ] Write a methodology
+- [x] Write a Related research
+- [x] Write a methodology
 - [ ] Research about machine vision models
 	- [ ] Compare them
 	- [ ] Decide what model to use
