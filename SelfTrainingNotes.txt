@@ -1,0 +1,158 @@
+New https://pypi.org/project/ultralytics/8.4.188 available  Update with 'pip install -U ultralytics'
+Ultralytics 8.4.152  Python-3.14.7 torch-2.14.0+cpu CPU (AMD Ryzen 5 3600 6-Core Processor)
+engine\trainer: agnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=16, bgr=0.0, box=7.5, cache=true, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=VisDrone.yaml, degrees=0.0, deterministic=True, device=cpu, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=1, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=800, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolo26n.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=Self computated, nbs=64, nms=None, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=5, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=None, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+Overriding model.yaml nc=80 with nc=10
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]      
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5, 3, True]        
+ 10                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    119808  ultralytics.nn.modules.block.C3k2            [384, 128, 1, True]           
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     34304  ultralytics.nn.modules.block.C3k2            [256, 64, 1, True]            
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1     95232  ultralytics.nn.modules.block.C3k2            [192, 128, 1, True]           
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    463104  ultralytics.nn.modules.block.C3k2            [384, 256, 1, True, 0.5, True]
+ 23        [16, 19, 22]  1    245076  ultralytics.nn.modules.head.Detect           [10, 1, True, [64, 128, 256]] 
+YOLO26n summary: 260 layers, 2,507,700 parameters, 2,507,700 gradients, 5.9 GFLOPs
+
+Remapped 4/10 cls head rows from pretrained weights by class name
+Transferred 612/708 items from pretrained weights
+train: Fast image access  (ping: 0.10.0 ms, read: 1310.5495.1 MB/s, size: 260.7 KB)
+train: Scanning C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\labels\train.cache... …: 100% ━━━━━━━━━━━━ 6471/6471 969.3Mit/s 0.0s
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\0000137_02220_d_0000163.jpg: 1 duplicate labels removed
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\0000140_00118_d_0000002.jpg: 1 duplicate labels removed
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\9999945_00000_d_0000114.jpg: 1 duplicate labels removed
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\9999987_00000_d_0000049.jpg: 1 duplicate labels removed
+val: Fast image access  (ping: 0.10.0 ms, read: 872.9347.5 MB/s, size: 142.1 KB)
+val: Scanning C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\labels\val.cache... 548 im…: 100% ━━━━━━━━━━━━ 548/548 104.5Mit/s 0.0s
+optimizer: 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically... 
+optimizer: AdamW(lr=0.000714, momentum=0.9) with parameter groups 114 weight(decay=0.0), 126 weight(decay=0.0005), 126 bias(decay=0.0)
+WARNING Dataset images contain up to 902 objects (train=902, val=317), but max_det=300. This mismatch can cap recall and produce invalid validation metrics. Raising it may increase validation cost but cannot increase model or export capacity, which may cap recall. Setting max_det=902 to match the observed maximum.
+Plotting labels to C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated\labels.jpg... 
+Using 6471 train, 548 val images for fraction=1.0 at imgsz=800
+Using 0 dataloader workers
+Logging results to C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated
+Starting training for 1 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss    l1_loss  Instances       Size
+        1/1         0G      2.279      2.755   0.002994        419        800: 100% ━━━━━━━━━━━━ 405/405 7.9s/it 53:04
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 18/18 5.2s/it 1:34
+                   all        548      38759      0.332      0.218      0.168      0.089
+
+1 epochs completed in 0.911 hours.
+Optimizer stripped from C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated\weights\last.pt, 5.4MB
+Optimizer stripped from C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated\weights\best.pt, 5.4MB
+
+Validating C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated\weights\best.pt...
+Ultralytics 8.4.152  Python-3.14.7 torch-2.14.0+cpu CPU (AMD Ryzen 5 3600 6-Core Processor)
+YOLO26n summary (fused): 120 layers, 2,376,786 parameters, 0 gradients, 5.3 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 18/18 2.7s/it 48.4s
+                   all        548      38759      0.332      0.218      0.168     0.0889
+            pedestrian        520       8844      0.277       0.35      0.236     0.0932
+                people        482       5125      0.334      0.119      0.125     0.0361
+               bicycle        364       1287     0.0471    0.00155    0.00967    0.00243
+                   car        515      14064       0.41      0.728      0.636      0.398
+                   van        421       1975       0.17      0.257      0.133     0.0829
+                 truck        266        750      0.208      0.173     0.0988     0.0615
+              tricycle        337       1045      0.307     0.0306     0.0624     0.0324
+       awning-tricycle        220        532          1          0     0.0214     0.0117
+                   bus        131        251       0.27      0.232      0.166       0.11
+                 motor        485       4886      0.297      0.287      0.196      0.061
+Speed: 1.1ms preprocess, 31.3ms inference, 0.0ms loss, 40.9ms postprocess per image
+Results saved to C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated
+
+
+
+Second iteration:
+
+
+New https://pypi.org/project/ultralytics/8.4.188 available  Update with 'pip install -U ultralytics'
+Ultralytics 8.4.152  Python-3.14.7 torch-2.14.0+cpu CPU (AMD Ryzen 5 3600 6-Core Processor)
+engine\trainer: agnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=16, bgr=0.0, box=7.5, cache=true, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=VisDrone.yaml, degrees=0.0, deterministic=True, device=cpu, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=1, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=800, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=902, mixup=0.0, mode=train, model=./runs/detect/Self computated/weights/best.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=Self computated-2, nbs=64, nms=None, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=5, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=None, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated-2, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]      
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5, 3, True]        
+ 10                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    119808  ultralytics.nn.modules.block.C3k2            [384, 128, 1, True]           
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     34304  ultralytics.nn.modules.block.C3k2            [256, 64, 1, True]            
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1     95232  ultralytics.nn.modules.block.C3k2            [192, 128, 1, True]           
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    463104  ultralytics.nn.modules.block.C3k2            [384, 256, 1, True, 0.5, True]
+ 23        [16, 19, 22]  1    245076  ultralytics.nn.modules.head.Detect           [10, 1, True, [64, 128, 256]] 
+YOLO26n summary: 260 layers, 2,507,700 parameters, 2,507,700 gradients, 5.9 GFLOPs
+
+Remapped 9/10 cls head rows from pretrained weights by class name
+Transferred 708/708 items from pretrained weights
+train: Fast image access  (ping: 0.10.0 ms, read: 1253.7484.1 MB/s, size: 260.7 KB)
+train: Scanning C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\labels\train.cache... 6…: 100% ━━━━━━━━━━━━ 6471/6471 1.2Git/s 0.0s
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\0000137_02220_d_0000163.jpg: 1 duplicate labels removed
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\0000140_00118_d_0000002.jpg: 1 duplicate labels removed
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\9999945_00000_d_0000114.jpg: 1 duplicate labels removed
+train: C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\images\train\9999987_00000_d_0000049.jpg: 1 duplicate labels removed
+val: Fast image access  (ping: 0.10.0 ms, read: 1067.6449.8 MB/s, size: 142.1 KB)
+val: Scanning C:\Users\konst\Documents\GitHub\DI-work\YOLOTesting\datasets\VisDrone\labels\val.cache... 548 i…: 100% ━━━━━━━━━━━━ 548/548 127.7Mit/s 0.0s
+optimizer: 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically... 
+optimizer: AdamW(lr=0.000714, momentum=0.9) with parameter groups 114 weight(decay=0.0), 126 weight(decay=0.0005), 126 bias(decay=0.0)
+Plotting labels to C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated-2\labels.jpg... 
+Using 6471 train, 548 val images for fraction=1.0 at imgsz=800
+Using 0 dataloader workers
+Logging results to C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated-2
+Starting training for 1 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss    l1_loss  Instances       Size
+        1/1         0G      2.202        2.1   0.002778        419        800: 100% ━━━━━━━━━━━━ 405/405 8.2s/it 55:19
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 18/18 5.1s/it 1:32
+                   all        548      38759       0.29      0.254      0.209      0.113
+
+1 epochs completed in 0.948 hours.
+Optimizer stripped from C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated-2\weights\last.pt, 5.4MB
+Optimizer stripped from C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated-2\weights\best.pt, 5.4MB
+
+Validating C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated-2\weights\best.pt...
+Ultralytics 8.4.152  Python-3.14.7 torch-2.14.0+cpu CPU (AMD Ryzen 5 3600 6-Core Processor)
+YOLO26n summary (fused): 120 layers, 2,376,786 parameters, 0 gradients, 5.3 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 18/18 2.5s/it 45.6s
+                   all        548      38759      0.289      0.255      0.209      0.113
+            pedestrian        520       8844       0.23      0.425      0.272      0.108
+                people        482       5125       0.39      0.169      0.159     0.0426
+               bicycle        364       1287     0.0291    0.00155     0.0118    0.00313
+                   car        515      14064      0.436       0.75      0.674      0.426
+                   van        421       1975      0.277      0.294      0.223      0.151
+                 truck        266        750      0.234      0.243      0.158      0.101
+              tricycle        337       1045      0.314     0.0727     0.0927     0.0469
+       awning-tricycle        220        532      0.348     0.0376     0.0589     0.0368
+                   bus        131        251      0.275      0.255        0.2      0.137
+                 motor        485       4886      0.353      0.301       0.24     0.0765
+Speed: 1.1ms preprocess, 32.7ms inference, 0.0ms loss, 32.8ms postprocess per image
+Results saved to C:\Users\konst\Documents\GitHub\DI-work\YOLO26n VisDrone\runs\detect\Self computated-2
