@@ -4,13 +4,20 @@ Nice and steady
 
 - [ ] check similar DI works from LutPub 
 - [x] Write a Related research
+	- [ ] Fix
 - [x] Write a methodology
 - [ ] Research about machine vision models
-	- [ ] Compare them
-	- [ ] Decide what model to use
-- [ ] Train an instance of that model
-	- [ ] Test the instance of the model
-- [ ] Research about camera systems
+	- [ ] Explain machine vision
+	- [x] Compare them
+	- [x] Decide what model to use
+- [ ] Write how to train a model
+	- [ ] training data
+	- [ ] data collection
+	- [ ] how to label data
+	- [ ] explain the training algorithm
+- [x] Train an instance of that model
+	- [x] Test the instance of the model
+- [ ] Research about camera systems (Might not be done)
 - [ ] Put everything together
 - [ ] Write discussions 
 - [ ] Write Conclusion

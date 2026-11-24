@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Timetable.md",
+                "file": "Last week plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Timetable"
+              "title": "Last week plan"
             }
           }
         ]
@@ -188,8 +188,10 @@
   "active": "d1242c39eaa2f751",
   "lastOpenFiles": [
     "Main plan.md",
+    "Last week plan.md",
     "Meeting 4.md",
     "Timetable.md",
+    "Training data.md",
     "Topic.md",
     "Meetings/Bitwell meeting 1.md",
     "Meetings",

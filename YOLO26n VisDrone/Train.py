@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 def main():
     # Load a YOLO26n model. (Original is coco trained)
-    model = YOLO("./runs/detect/XL-LapTopComputated-4/weights/last.pt")
+    model = YOLO("YOLO26n.pt")
 
     # Source Objects365 v2 name (lowercased) -> target COCO name
     ALIASES = {
@@ -13,7 +13,7 @@ def main():
     # # Train the model on the datases6t for 100 epochs
     results = model.train(
         data="VisDrone.yaml",  # Path to your dataset configuration
-        epochs=75,                        # Number of training epochs
+        epochs=100,                        # Number of training epochs
         imgsz=800,                         # Input image size
         batch=2,                          # Batch size, defaults to 16 in CPU training
         device=0,                      # GPU device ID (use 'cpu' for CPU training)
